@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #000;
+}
+
+/* Banner Section */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://spiderimg.amarujala.com/assets/images/jeevanjali.com/2025/11/06/bageshwar-dham-sarkar-dhirendra-krishna-shastri-sanatan-hindu-ekta-padyatra-start-7-to-16-november_313375829dc75a5d3f7500c91c38303f.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Orange overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 102, 0, 0.45);
+}
+
+/* Text Content */
+.content {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px #000;
+    z-index: 5;
+    max-width: 90%;
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Donate Button */
+.donate-btn {
+    padding: 14px 35px;
+    background: #fff;
+    color: #ff4d00;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.donate-btn:hover {
+    background: #d13b00;
+    color: #fff;
+    box-shadow: 0 0 20px #ff4d00;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content h1 {
+        font-size: 3.2rem;
+    }
+    .content h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 90vh;
+        background-position: top center;
+    }
+
+    .content h1 {
+        font-size: 2.4rem;
+    }
+
+    .content h2 {
+        font-size: 1.3rem;
+    }
+
+    .donate-btn {
+        font-size: 1.2rem;
+        padding: 12px 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 85vh;
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content h2 {
+        font-size: 1.1rem;
+    }
+
+    .donate-btn {
+        font-size: 1rem;
+        padding: 10px 22px;
+    }
+}

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>हिंदू एकता - दान पृष्ठ</title>
+  <meta name="description" content="हिंदू एकता के लिए दान करें — एकल पृष्ठ दान फ़ॉर्म" />
+
+  <style>
+    :root{ --accent:#B22222; --muted:#666; --bg:#faf7f5; --card:#ffffff; }
+    *{box-sizing:border-box}
+    html,body{
+      height:100%;margin:0;font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(180deg,#fff 0%,#f7f4f3 100%)
+    }
+    .container{max-width:980px;margin:28px auto;padding:20px}
+
+    /* Header */
+    .header{display:flex;align-items:center;gap:16px}
+    .logo{
+      width:72px;height:72px;border-radius:12px;
+      background:var(--accent);display:flex;align-items:center;
+      justify-content:center;color:#fff;font-weight:700;font-size:22px
+    }
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+    .badge{
+      background:#fff;padding:6px 10px;border-radius:999px;border:1px solid #eee;
+      font-weight:700
+    }
+
+    /* Grid */
+    .grid{display:grid;grid-template-columns:1fr 380px;gap:20px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr} .right{order:2}}
+
+    /* Cards */
+    .card{
+      background:var(--card);border-radius:12px;padding:18px;
+      box-shadow:0 6px 18px rgba(20,20,20,0.06)
+    }
+    .impact-list{list-style:none;padding:0;margin:8px 0}
+    .impact-list li{padding:8px 0;border-bottom:1px dashed #f0f0f0}
+
+    /* Donation Buttons */
+    .donation-options{display:flex;gap:8px;flex-wrap:wrap}
+    .amount-btn{
+      padding:10px 14px;border-radius:8px;border:1px solid #eee;
+      background:#fff;cursor:pointer
+    }
+    .amount-btn.active{
+      border-color:var(--accent);background:linear-gradient(90deg,#fff6f6,#fff)
+    }
+
+    /* Form Fields */
+    label{display:block;margin-top:12px;font-weight:600}
+    input[type=text], input[type=email], input[type=number], textarea, select{
+      width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;
+      margin-top:6px
+    }
+
+    /* Buttons */
+    .btn{
+      display:inline-block;padding:12px 18px;border-radius:10px;
+      background:var(--accent);color:#fff;text-decoration:none;border:none;
+      cursor:pointer;font-weight:700
+    }
+    .btn.secondary{background:#444}
+
+    .qr{
+      width:100%;height:180px;background:#f3f3f3;border-radius:8px;
+      display:flex;align-items:center;justify-content:center;color:#999
+    }
+
+    .bank-details{
+      font-size:14px;background:#fff8f8;padding:12px;border-radius:8px;
+      border:1px dashed #f1d7d7
+    }
+
+    .testimonial{
+      font-style:italic;color:#333;padding:10px;border-left:4px solid #eee;
+      margin-top:12px
+    }
+
+    .success{
+      background:#e8f7ec;border:1px solid #bfe6c7;color:#2b7a3a;
+      padding:10px;border-radius:8px;margin-top:10px
+    }
+    .error{
+      background:#ffecec;border:1px solid #f5b9b9;color:#9a2b2b;
+      padding:10px;border-radius:8px;margin-top:10px
+    }
+
+    .small{font-size:13px;color:var(--muted)}
+    .footer{text-align:center;margin-top:22px;font-size:13px;color:var(--muted)}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="https://images.seeklogo.com/logo-png/51/2/hindu-logo-png_seeklogo-511405.png" width="60">
+      </div>
+
+      <div>
+        <h1>हिंदू एकता — दान पृष्ठ</h1>
+        <p class="lead">आपका सहयोग समाज सेवा, सांस्कृतिक कार्यक्रम, आपदा राहत और शिक्षा कार्यों को मजबूत बनाता है।</p>
+      </div>
+
+      <div style="margin-left:auto">
+        <div class="badge">सुरक्षित • भरोसेमंद</div>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-top:18px">
+      <div>
+
+        <!-- Mission -->
+        <div class="card">
+          <h2>हमारा उद्देश्य</h2>
+          <p class="small">
+            हिंदू एकता का मूल लक्ष्य: समाजिक सहयोग, सांस्कृतिक संवर्धन,
+            जरूरतमंदों की सहायता और धार्मिक-सांस्कृतिक मूल्यों का उत्थान।
+          </p>
+
+          <h3>आपका दान कहाँ उपयोग होता है?</h3>
+          <ul class="impact-list">
+            <li>₹500 — भोजन/राशन सहायता</li>
+            <li>₹1500 — शिक्षा सामग्री सहायता</li>
+            <li>₹5000 — सामुदायिक कार्यक्रम/सहायता</li>
+            <li>₹15000 — आपदा राहत एवं पुनर्वास</li>
+          </ul>
+
+          <div class="testimonial">
+            "आपका छोटा सहयोग भी किसी परिवार की उम्मीद बन सकता है।"
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="card" style="margin-top:14px">
+          <h3>अक्सर पूछे जाने वाले प्रश्न</h3>
+          
+          <p class="small">
+            <strong>क्या दान सुरक्षित है?</strong><br>
+            हाँ — यह केवल डेमो पेज है, असली भुगतान हेतु Razorpay/Paytm/Stripe जोड़ा जाएगा।
+          </p>
+
+          <p class="small">
+            <strong>क्या दान कर-छूट योग्य है?</strong><br>
+            संस्था के पंजीकरण के अनुसार जानकारी आपको ईमेल में दी जाएगी।
+          </p>
+        </div>
+      </div>
+
+      <!-- Donation Form -->
+      <aside class="right">
+        <div class="card">
+          <h3>दान फ़ॉर्म</h3>
+
+          <div class="small">कृपया नीचे विवरण भरें — यह केवल परीक्षण हेतु नमूना फ़ॉर्म है।</div>
+
+          <form id="donationForm" onsubmit="return false;">
+            
+            <label>पूरा नाम</label>
+            <input id="name" type="text" placeholder="अपना नाम लिखें" required />
+
+            <label>ईमेल</label>
+            <input id="email" type="email" placeholder="your@email.com" />
+
+            <label>दान राशि (₹)</label>
+
+            <div class="donation-options" id="amountOptions">
+              <button type="button" class="amount-btn" data-amount="500">₹500</button>
+              <button type="button" class="amount-btn" data-amount="1500">₹1500</button>
+              <button type="button" class="amount-btn" data-amount="5000">₹5000</button>
+              <button type="button" class="amount-btn" data-amount="15000">₹15000</button>
+            </div>
+
+            <input id="amount" type="number" placeholder="जैसे: 1500" required />
+
+            <label>दान का उद्देश्य</label>
+            <select id="purpose">
+              <option value="general">सामान्य दान</option>
+              <option value="education">शिक्षा सहायता</option>
+              <option value="relief">आपदा राहत</option>
+              <option value="other">अन्य</option>
+            </select>
+
+            <label>संदेश (वैकल्पिक)</label>
+            <textarea id="message" rows="3" placeholder="यदि आप कोई नोट लिखना चाहें"></textarea>
+
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button class="btn" onclick="submitDonation()">दान करें</button>
+              <button class="btn secondary" type="button" onclick="resetForm()">रीसेट</button>
+            </div>
+
+            <div id="formFeedback"></div>
+
+          </form>
+        </div>
+
+        <!-- Bank Transfer -->
+        <div class="card" style="margin-top:14px">
+          <h3>ऑफ़लाइन / बैंक ट्रांसफ़र</h3>
+
+          <div class="bank-details">
+            <strong>खाता नाम:</strong> हिंदू एकता ट्रस्ट<br>
+            <strong>बैंक:</strong> उदाहरण बैंक<br>
+            <strong>खाता संख्या:</strong> 123456789012<br>
+            <strong>IFSC:</strong> EXAMPL0001
+          </div>
+
+          <p class="small">कृपया ट्रांसफ़र नोट में अपना नाम लिखें ताकि रसीद भेजी जा सके।</p>
+        </div>
+
+        <!-- QR -->
+        <div class="card" style="margin-top:14px">
+          <h3>QR द्वारा दान</h3>
+          <div class="qr"><img src="Pasted image.png" alt="" style="width: 200px; height: auto;"></div>
+          <p class="small">UPI/स्कैनर से भुगतान करने हेतु यह QR जोड़ सकते हैं।</p>
+        </div>
+
+
+        
+      </aside>
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> हिंदू एकता · सभी अधिकार सुरक्षित<br>
+      <span class="small">यह पृष्ठ केवल प्रदर्शन के लिए है।</span>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Amount selection
+    document.querySelectorAll('.amount-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('amount').value = btn.dataset.amount;
+      });
+    });
+
+    function resetForm(){
+      document.getElementById('donationForm').reset();
+      document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));
+      document.getElementById('formFeedback').innerHTML = '';
+    }
+
+    function submitDonation(){
+      const name = document.getElementById('name').value.trim();
+      const amount = document.getElementById('amount').value.trim();
+      const feedback = document.getElementById('formFeedback');
+
+      if(!name || !amount){
+        feedback.innerHTML = `<div class="error">कृपया सभी अनिवार्य जानकारी भरें।</div>`;
+        return;
+      }
+
+      feedback.innerHTML = `<div class="success">धन्यवाद, ${name}! आपका दान प्राप्त हुआ (डेमो)।</div>`;
+    }
+  </script>
+
+</body>
+</html>
